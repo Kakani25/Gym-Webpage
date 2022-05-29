@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/Bg.jpg");
+            background-repeat: no-repeat;
+
+            background-size: cover;
+
+
+        }
+
+        .left {
+            position: absolute;
+            top: 20px;
+            left: 34px;
+            display: inline-block;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .left img {
+            width: 100px;
+            mix-blend-mode: lighten;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+
+        .mid {
+
+            
+
+            display: block;
+            /* text-align: center; */
+
+            width: 42%;
+
+            margin: 20px auto;
+            /* border: 2px solid green; */
+
+           
+
+        }
+
+        .right {
+            position: absolute;
+            top: 37px;
+            right: 34px;
+
+
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+            
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+
+            color: white;
+            text-decoration: none;
+            padding: 34px 12px;
+            
+            
+
+        }
+
+        .navbar li a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        .navbar li a.active {
+            color: skyblue;
+        }
+
+        .btn {
+            font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px 9px;
+            background-color: white;
+            color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: lightblue;
+        }
+
+        .container {
+            /* color: black; */
+            border: 2px solid black;
+            margin: 50px 80px;
+            padding: 15px 100px;
+            /* margin: 106px 80px;
+            padding: 75px; */
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .forms input {
+            font-family: 'Lobster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            display: block;
+            width: 439px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            color: black;
+            text-decoration: underline overline black;
+            text-align: center;
+
+        }
+
+        .container button {
+
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym1.png" alt="">
+            <div>Sai Fitness</div>
+
+            <!-- <div>Harry Fitness</div> -->
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now </button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Ajjarkad now</h1>
+        <form action="noaction.php">
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+
+            <div class="forms">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
